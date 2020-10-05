@@ -1,0 +1,6 @@
+package rectangle;
+
+class Rectangle {
+	int w, h;
+	public 
+}

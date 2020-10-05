@@ -1,0 +1,10 @@
+package rectangle;
+
+class Rectangle {
+	double w, h;
+	
+	Rectangle(double width, double height){
+		this.w = width;
+		this.h = height; 
+	}
+}

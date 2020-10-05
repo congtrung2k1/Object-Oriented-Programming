@@ -1,0 +1,11 @@
+package triangle;
+
+class Triangle {
+	
+}
+
+public class TestTriangle {
+	public static void main(String[] argc) {
+		
+	}
+}

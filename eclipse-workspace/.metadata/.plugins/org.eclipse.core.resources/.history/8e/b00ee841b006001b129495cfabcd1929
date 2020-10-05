@@ -1,0 +1,21 @@
+package rectangle;
+
+class Rectangle {
+	double w, h;
+	
+	Rectangle(double width, double height){
+		if (width < 0) {
+			System.out.println("Width Invalid.");
+			this.w = -1 * width;
+		} else 
+			this.w = width;
+		
+		if (height < 0) {
+			System.out.println("Height Invalid.");
+			this.h = -1 * height;
+		} else 
+			this.h = height; 
+	}
+	
+	
+}
