@@ -3,7 +3,7 @@ package problem2;
 import java.awt.*;
 import javax.swing.*;
 
-class problem2 extends JFrame {
+class Drawing extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
 	private JPanel panel;
@@ -11,10 +11,10 @@ class problem2 extends JFrame {
 	
 	private int x = 0;
 	private int y = 0;
-	private int w = 250;
-	private int h = 70;
+	private int w = 300;
+	private int h = 100;
 	
-	public problem2() {
+	public Drawing() {
 		super();
 		Init();
 		this.setVisible(true);
@@ -44,10 +44,7 @@ class problem2 extends JFrame {
 		container.add(c);
 	}
 	
-	public static void main() 
-	{
-		new problem2();
-	}
+
 }
 
 class DrawLine extends JPanel {
@@ -58,6 +55,11 @@ class DrawLine extends JPanel {
 		g.setColor(Color.black);
 		g.drawLine(0,0,100,100);
 	}
-	
+}
 
+public class problem2 {
+	public static void main() 
+	{
+		new Drawing();
+	}
 }
