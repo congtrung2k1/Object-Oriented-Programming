@@ -1,3 +1,5 @@
+package problem2;
+
 import java.awt.*;
 import javax.swing.*;
 
