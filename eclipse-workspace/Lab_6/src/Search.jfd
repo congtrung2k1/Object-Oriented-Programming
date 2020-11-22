@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:34:p, par l {comp label2::l:p:49:p, comp label3::l:p::p, comp label1::l:p:67:p}, space :p:34:p, par l {seq {comp scrollPane3:::p:99:p, space :0:0:x}, comp textField1:::::x, comp scrollPane2::l:::x}, space :p:27:p, comp button1:::p::p, space :p:97:p}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par t {comp label1:::p:25:p, par b {comp textField1::b:p::p, comp button1::b:p::p}}, space u:::p, par t {comp label2:::p:25:p, comp scrollPane3:::p::p}, space u:::p, par l {seq {comp label3:::p::p, space :0:86:x}, comp scrollPane2::::100:x}, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Product Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Amount"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Description"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea2"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Search"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 390, 245 )
+		} )
+	}
+}
