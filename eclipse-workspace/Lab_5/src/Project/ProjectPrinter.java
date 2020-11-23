@@ -12,7 +12,6 @@ public class ProjectPrinter implements Runnable {
 		this.proj = a;
 	}
 	
-	@Override
 	public void run() {
 		proj.printProj();
 		

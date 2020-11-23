@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
 /*
@@ -19,6 +20,10 @@ public class Search extends JFrame {
 		initComponents();
 	}
 
+	private void searchActionPerformed(ActionEvent e) {
+		System.out.println("Searching...");
+	}
+
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
 		// Generated using JFormDesigner Evaluation license - congtrung2k1
@@ -33,16 +38,26 @@ public class Search extends JFrame {
 		button1 = new JButton();
 
 		//======== this ========
+		setTitle("WAREHOUSE SEARCH");
+		setVisible(true);
+		setResizable(false);
+		setFont(new Font(Font.DIALOG, Font.PLAIN, 12));
 		Container contentPane = getContentPane();
 
 		//---- label1 ----
 		label1.setText("Product Name");
+		label1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label1.setHorizontalAlignment(SwingConstants.CENTER);
 
 		//---- label2 ----
 		label2.setText("Amount");
+		label2.setHorizontalAlignment(SwingConstants.CENTER);
+		label2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		//---- label3 ----
 		label3.setText("Description");
+		label3.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label3.setHorizontalAlignment(SwingConstants.CENTER);
 
 		//======== scrollPane2 ========
 		{
@@ -56,48 +71,45 @@ public class Search extends JFrame {
 
 		//---- button1 ----
 		button1.setText("Search");
+		button1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		button1.addActionListener(e -> searchActionPerformed(e));
 
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(34, 34, 34)
+					.addContainerGap()
+					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+						.addComponent(label2, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+						.addComponent(label3, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+					.addGap(18, 18, 18)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(label2, GroupLayout.PREFERRED_SIZE, 49, GroupLayout.PREFERRED_SIZE)
-						.addComponent(label3)
-						.addComponent(label1, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE))
-					.addGap(34, 34, 34)
-					.addGroup(contentPaneLayout.createParallelGroup()
-						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, 99, GroupLayout.PREFERRED_SIZE)
-							.addGap(0, 0, Short.MAX_VALUE))
-						.addComponent(textField1)
-						.addComponent(scrollPane2))
-					.addGap(27, 27, 27)
-					.addComponent(button1)
-					.addGap(97, 97, 97))
+						.addComponent(scrollPane3, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+						.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+						.addComponent(scrollPane2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+					.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+					.addGap(20, 20, 20))
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(30, 30, 30)
-					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-						.addComponent(label1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-						.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-							.addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addComponent(button1)))
-					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-						.addComponent(label2, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-						.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap(29, Short.MAX_VALUE)
+					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+						.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(label1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addComponent(label3)
-							.addGap(0, 86, Short.MAX_VALUE))
-						.addComponent(scrollPane2, GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
-					.addContainerGap())
+						.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(label2, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+					.addGroup(contentPaneLayout.createParallelGroup()
+						.addComponent(label3, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
+						.addComponent(scrollPane2, GroupLayout.PREFERRED_SIZE, 107, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap(20, Short.MAX_VALUE))
 		);
 		pack();
 		setLocationRelativeTo(getOwner());

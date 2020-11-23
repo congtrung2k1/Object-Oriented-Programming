@@ -16,7 +16,6 @@ public class Employee implements Comparable<Employee>{
 		this.noOfTravelDay = e;
 	}
 	
-	@Override
 	public int compareTo(Employee that) {
 		if (this.noOfTravelDay > that.noOfTravelDay || (this.noOfTravelDay == that.noOfLeavingDay && this.noOfLeavingDay < that.noOfLeavingDay)) 
 			return 1;
