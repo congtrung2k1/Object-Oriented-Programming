@@ -12,16 +12,25 @@ import javax.swing.GroupLayout;
  * @author congtrung2k1
  */
 public class Search extends JFrame {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	
+	private String product = "";
+	private StringBuilder amount = new StringBuilder();
+	private StringBuilder des = new StringBuilder();
+	
 	public Search() {
 		initComponents();
 	}
 
-	private void searchActionPerformed(ActionEvent e) {
-		System.out.println("Searching...");
+	private void searchActionPerformed(ActionEvent e) {		
+		this.product = this.textField1.getText();
+		this.amount = new StringBuilder();
+		this.des = new StringBuilder();
+		
+		Product.searchWare(this.product, this.amount, this.des);
+		
+		this.textArea1.setText(this.amount.toString());
+		this.textArea2.setText(this.des.toString());
 	}
 
 	private void initComponents() {
@@ -61,13 +70,24 @@ public class Search extends JFrame {
 
 		//======== scrollPane2 ========
 		{
+
+			//---- textArea1 ----
+			textArea1.setEditable(false);
+			textArea1.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 14));
 			scrollPane2.setViewportView(textArea1);
 		}
 
 		//======== scrollPane3 ========
 		{
+
+			//---- textArea2 ----
+			textArea2.setEditable(false);
+			textArea2.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 14));
 			scrollPane3.setViewportView(textArea2);
 		}
+
+		//---- textField1 ----
+		textField1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		//---- button1 ----
 		button1.setText("Search");
@@ -81,16 +101,16 @@ public class Search extends JFrame {
 				.addGroup(contentPaneLayout.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-						.addComponent(label1, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+						.addComponent(label3, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
 						.addComponent(label2, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
-						.addComponent(label3, GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 					.addGap(18, 18, 18)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(scrollPane3, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-						.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-						.addComponent(scrollPane2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-					.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(scrollPane3, GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+						.addComponent(scrollPane2)
+						.addComponent(textField1, GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
+					.addGap(39, 39, 39)
+					.addComponent(button1, GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
 					.addGap(20, 20, 20))
 		);
 		contentPaneLayout.setVerticalGroup(
@@ -99,16 +119,16 @@ public class Search extends JFrame {
 					.addGap(29, 29, 29)
 					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 						.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(label1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
+						.addComponent(textField1, GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+					.addGroup(contentPaneLayout.createParallelGroup()
+						.addComponent(label2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(scrollPane2, GroupLayout.Alignment.TRAILING))
 					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(label2, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(label3, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-						.addComponent(scrollPane2, GroupLayout.PREFERRED_SIZE, 107, GroupLayout.PREFERRED_SIZE))
+						.addComponent(label3, GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+						.addComponent(scrollPane3, GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
 					.addGap(20, 20, 20))
 		);
 		pack();

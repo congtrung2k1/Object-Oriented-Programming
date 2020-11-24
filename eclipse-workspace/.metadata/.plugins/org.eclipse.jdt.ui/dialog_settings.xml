@@ -3,7 +3,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
 	<item key="org.eclipse.jdt.ui.last.external.project" value="C:\Users\Admin\Documents\GitHub"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Admin\Documents\GitHub\Object-Oriented-Programming\eclipse-workspace\Lab_6\lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\kien\Documents\GitHub\Object-Oriented-Programming\eclipse-workspace\Lab_6\lib"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -15,6 +15,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+		<item key="RunnableJar.export.ipwarning" value="true"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item key="create_constructor" value="false"/>
@@ -82,5 +83,20 @@
 		<item key="expanded0" value="true"/>
 		<item key="expanded1" value="false"/>
 		<item key="expanded2" value="false"/>
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\kien\Documents\GitHub\Object-Oriented-Programming\eclipse-workspace"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Main (1) - Lab_6"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\kien\Desktop\WarehouseManager.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\kien\Desktop\WarehouseManager.jar"/>
+			<item value="C:\Users\kien\Desktop\test.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\kien\Documents\GitHub\Object-Oriented-Programming\eclipse-workspace.xml"/>
+			<item value=".xml"/>
+		</list>
 	</section>
 </section>

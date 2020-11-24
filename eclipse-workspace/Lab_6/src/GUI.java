@@ -3,14 +3,12 @@ import java.awt.event.ActionEvent;
 import javax.swing.*;
 
 import javax.swing.GroupLayout;
-import org.json.simple.*;
 /*
  * Created by JFormDesigner on Mon Nov 23 03:32:13 ICT 2020
  */
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle;
@@ -25,24 +23,31 @@ public class GUI extends JFrame {
 		
 	public GUI() {
 		initComponents();
+		
+		String tmp = Product.update();
+		this.textArea1.setText(tmp);
 	}
 
 	private void searchActionPerformed(ActionEvent e) {
-		System.out.println("Search");
 		new Search();
 	}
 
 	private void addActionPerformed(ActionEvent e) {
-		System.out.println("Add");
-		
 		this.product = this.textField1.getText();
 		this.amount = this.textField2.getText();
 		this.des = this.textField3.getText();
-		new Jadd(this.product, this.amount, this.des);
+		Product.addWare(this.product, this.amount, this.des);
+		
+		String tmp = Product.update();
+		this.textArea1.setText(tmp);
 	}
 
 	private void removeActionPerformed(ActionEvent e) {
-		System.out.println("Remove");
+		this.product = this.textField1.getText();
+		Product.removeWare(this.product);
+		
+		String tmp = Product.update();
+		this.textArea1.setText(tmp);
 	}
 
 	private void initComponents() {
@@ -59,12 +64,13 @@ public class GUI extends JFrame {
 		textField3 = new JTextField();
 		label4 = new JLabel();
 		scrollPane1 = new JScrollPane();
-		list1 = new JList<>();
+		textArea1 = new JTextArea();
 
 		//======== this ========
 		setTitle("WAREHOUSE MANAGEMENT");
 		setVisible(true);
 		setResizable(false);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		Container contentPane = getContentPane();
 
 		//---- button1 ----
@@ -105,7 +111,11 @@ public class GUI extends JFrame {
 
 		//======== scrollPane1 ========
 		{
-			scrollPane1.setViewportView(list1);
+
+			//---- textArea1 ----
+			textArea1.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 14));
+			textArea1.setEditable(false);
+			scrollPane1.setViewportView(textArea1);
 		}
 
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
@@ -116,24 +126,26 @@ public class GUI extends JFrame {
 					.addGroup(contentPaneLayout.createParallelGroup()
 						.addGroup(contentPaneLayout.createSequentialGroup()
 							.addContainerGap()
-							.addGroup(contentPaneLayout.createParallelGroup()
-								.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+							.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 						.addGroup(contentPaneLayout.createSequentialGroup()
 							.addGap(11, 11, 11)
-							.addComponent(label1, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)))
+							.addComponent(label1, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addContainerGap()
+							.addGroup(contentPaneLayout.createParallelGroup()
+								.addComponent(label3, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
 					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(textField3)
-						.addComponent(textField2)
 						.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-						.addComponent(button2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+						.addComponent(button2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
+						.addComponent(textField2)
+						.addComponent(textField3))
 					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addComponent(button3, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-						.addComponent(scrollPane1)
-						.addComponent(label4, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))
+						.addComponent(button3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(label4, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+						.addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))
 					.addContainerGap())
 		);
 		contentPaneLayout.setVerticalGroup(
@@ -147,13 +159,13 @@ public class GUI extends JFrame {
 					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
 						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addGroup(contentPaneLayout.createParallelGroup()
+							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
 								.addComponent(textField2)
 								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 							.addGroup(contentPaneLayout.createParallelGroup()
-								.addComponent(textField3)
-								.addComponent(label3, GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)))
+								.addComponent(textField3, GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
 						.addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))
 					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
@@ -165,7 +177,7 @@ public class GUI extends JFrame {
 		pack();
 		setLocationRelativeTo(getOwner());
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents
-	}
+}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
 	// Generated using JFormDesigner Evaluation license - congtrung2k1
@@ -180,7 +192,7 @@ public class GUI extends JFrame {
 	private JTextField textField3;
 	private JLabel label4;
 	private JScrollPane scrollPane1;
-	private JList<JSONArray> list1;
+	private JTextArea textArea1;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 	
 	public String product = "";
