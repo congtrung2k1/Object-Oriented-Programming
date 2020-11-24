@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import javax.swing.*;
 
@@ -37,7 +36,7 @@ public class GUI extends JFrame {
 		System.out.println("Add");
 		
 		this.product = this.textField1.getText();
-		this.amount = Integer.parseInt(this.textField2.getText());
+		this.amount = this.textField2.getText();
 		this.des = this.textField3.getText();
 		new Jadd(this.product, this.amount, this.des);
 	}
@@ -115,70 +114,53 @@ public class GUI extends JFrame {
 			contentPaneLayout.createParallelGroup()
 				.addGroup(contentPaneLayout.createSequentialGroup()
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(button1)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addComponent(button2))
 						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addContainerGap()
 							.addGroup(contentPaneLayout.createParallelGroup()
-								.addGroup(contentPaneLayout.createSequentialGroup()
-									.addGap(15, 15, 15)
-									.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
-										.addComponent(label1, GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
-										.addComponent(label3, GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)))
-								.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-									.addContainerGap()
-									.addComponent(label2, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-								.addComponent(textField2)
-								.addComponent(textField1)
-								.addComponent(textField3, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 132, GroupLayout.PREFERRED_SIZE))))
-					.addGap(21, 21, 21)
+								.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addGap(11, 11, 11)
+							.addComponent(label1, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
-						.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-							.addComponent(label4, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE)
-							.addGap(32, 32, 32))
-						.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-							.addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 148, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap())
-						.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-							.addComponent(button3)
-							.addGap(53, 53, 53))))
+						.addComponent(textField3)
+						.addComponent(textField2)
+						.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
+						.addComponent(button2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addGroup(contentPaneLayout.createParallelGroup()
+						.addComponent(button3, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+						.addComponent(scrollPane1)
+						.addComponent(label4, GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))
+					.addContainerGap())
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
+				.addGroup(contentPaneLayout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+						.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(textField1))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup()
 						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addGap(29, 29, 29)
-							.addComponent(label4, GroupLayout.PREFERRED_SIZE, 27, GroupLayout.PREFERRED_SIZE))
-						.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-							.addContainerGap()
-							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-								.addComponent(label1, GroupLayout.PREFERRED_SIZE, 27, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField1, GroupLayout.PREFERRED_SIZE, 27, GroupLayout.PREFERRED_SIZE))))
-					.addGroup(contentPaneLayout.createParallelGroup()
-						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addGap(0, 13, Short.MAX_VALUE)
-							.addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addComponent(button3))
-						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-								.addComponent(label2, GroupLayout.PREFERRED_SIZE, 22, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField2, GroupLayout.PREFERRED_SIZE, 22, GroupLayout.PREFERRED_SIZE))
+							.addGroup(contentPaneLayout.createParallelGroup()
+								.addComponent(textField2)
+								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 							.addGroup(contentPaneLayout.createParallelGroup()
-								.addComponent(label3, GroupLayout.PREFERRED_SIZE, 27, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField3, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-								.addComponent(button2)
-								.addComponent(button1))))
-					.addGap(20, 20, 20))
+								.addComponent(textField3)
+								.addComponent(label3, GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)))
+						.addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))
+					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+						.addComponent(button3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(button2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addGap(17, 17, 17))
 		);
 		pack();
 		setLocationRelativeTo(getOwner());
@@ -202,7 +184,7 @@ public class GUI extends JFrame {
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 	
 	public String product = "";
-	public int amount = 0;
+	public String amount = "";
 	public String des = "";
 
 }

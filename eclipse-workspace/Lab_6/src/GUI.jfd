@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {par l {seq t {space :::p, comp button1:::p::p, space u:::p, comp button2:::p::p}, seq {par l {seq {space :p:15:p, par t:::p {comp label1::::112:x, comp label3::t::112:x}}, seq t {space :::p, comp label2:::p:112:p}}, space u:::p, par l:::p {comp textField2:::::x, comp textField1::l:::x, comp textField3::t:p:132:p}}}, space :p:21:p, par l {seq t {comp label4:::p:100:p, space :p:32:p}, seq t {comp scrollPane1:::p:148:p, space :::p}, seq t {comp button3:::p::p, space :p:53:p}}}}"
-			"$verticalGroup": "par l {seq t {par l {seq {space :p:29:p, comp label4:::p:27:p}, seq t {space :::p, par b {comp label1::b:p:27:p, comp textField1::b:p:27:p}}}, par l {seq {space :0:13:x, comp scrollPane1:::p::p, space u:::p, comp button3:::p::p}, seq {space u:::p, par b {comp label2::b:p:22:p, comp textField2::b:p:22:p}, space u:::p, par l {comp label3:::p:27:p, comp textField3:::p:97:p}, space u:::p, par b {comp button2::b:p::p, comp button1::b:p::p}}}, space :20:20:p}}"
+			"$horizontalGroup": "par l {seq l {par l {seq {space :::p, par l {comp button1::l:::x, comp label2::l:::x, comp label3::l:::x}}, seq {space :p:11:p, comp label1::::94:x}}, space :::p, par l {comp textField3::l:::x, comp textField2::l:::x, comp textField1::t::151:x, comp button2::t:::x}, space :::p, par l {comp button3::::170:x, comp scrollPane1::l:::x, comp label4::l::170:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par t {comp label4::t:::x, comp label1:::::x, comp textField1:::::x}, space u:::p, par l {seq {par l {comp textField2:::::x, comp label2:::::x}, space u:::p, par l {comp textField3:::::x, comp label3::::124:x}}, comp scrollPane1::::155:x}, space u:::p, par b {comp button3::b:::x, comp button1::b:::x, comp button2::b:::x}, space :p:17:p}}"
 		} ) {
 			name: "this"
 			"title": "WAREHOUSE MANAGEMENT"
@@ -71,7 +71,7 @@ new FormModel {
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 65, 35 )
+			"location": new java.awt.Point( 10, 40 )
 			"size": new java.awt.Dimension( 450, 280 )
 		} )
 	}

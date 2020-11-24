@@ -11,6 +11,6 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/Lab_6/lib/swing-layout-javadoc.zip!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/kien/Desktop/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Documents/GitHub/Object-Oriented-Programming/eclipse-workspace/Lab_6/lib/json_simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

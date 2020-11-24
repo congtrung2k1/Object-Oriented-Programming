@@ -5,7 +5,7 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
 			"$horizontalGroup": "par l {seq l {space :::p, par l:::p {comp label1::::107:x, comp label2::l::107:x, comp label3::l::107:x}, space s:::p, par l {comp scrollPane3::::123:x, comp textField1::t::123:x, comp scrollPane2::t::123:x}, space ::35:x, comp button1:::::x, space :p:20:p}}"
-			"$verticalGroup": "par l {seq l {space ::29:x, par b {comp button1::b:::x, comp textField1::b:p::p, comp label1::b:p:25:p}, space u:::p, par l {comp scrollPane3:::p::p, comp label2:::p:25:p}, space u:::p, par l {comp label3:::p:25:p, comp scrollPane2:::p:107:p}, space ::20:x}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, par b {comp button1::b:::x, comp textField1::b:p::p, comp label1::b:p:25:p}, space u:::p, par l {comp scrollPane3:::p::p, comp label2:::p:25:p}, space u:::p, par l {comp label3:::p:25:p, comp scrollPane2:::p:107:p}, space :p:20:p}}"
 		} ) {
 			name: "this"
 			"title": "WAREHOUSE SEARCH"
