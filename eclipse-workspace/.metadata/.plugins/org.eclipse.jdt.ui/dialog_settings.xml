@@ -99,4 +99,6 @@
 			<item value=".xml"/>
 		</list>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 </section>
