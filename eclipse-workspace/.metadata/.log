@@ -68,7 +68,11 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
 !SESSION 2020-11-30 23:28:56.870 -----------------------------------------------
+=======
+!SESSION 2020-12-01 10:14:00.543 -----------------------------------------------
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 eclipse.buildId=4.17.0.I20200902-1800
 java.version=13.0.2
 java.vendor=Oracle Corporation
@@ -76,15 +80,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2020-11-30 23:29:03.954
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2020-11-30 23:29:03.954
+=======
+!ENTRY org.eclipse.jface 2 0 2020-12-01 10:14:18.305
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-01 10:14:18.305
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@158e6fc2,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19d3f6ad,
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -92,11 +106,16 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54687fd0,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b69fc07,
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2020-11-30 23:29:09.722
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
@@ -154,6 +173,15 @@ java.lang.IllegalArgumentException: release 14 is not found in the system
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SESSION 2020-12-03 00:33:18.672 -----------------------------------------------
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-01 10:14:28.625
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kien'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-01 15:57:47.408 -----------------------------------------------
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 eclipse.buildId=4.17.0.I20200902-1800
 java.version=13.0.2
 java.vendor=Oracle Corporation
@@ -161,15 +189,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2020-12-03 00:34:04.467
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2020-12-03 00:34:04.467
+=======
+!ENTRY org.eclipse.jface 2 0 2020-12-01 15:58:11.368
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-01 15:58:11.368
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49a06087,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ffc6ea7,
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -177,18 +215,29 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c15034f,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c5708e7,
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2020-12-03 00:34:11.683
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-01 15:58:30.226
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kien'. If this is
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2020-12-03 00:50:18.173
 !MESSAGE Internal Error
 !STACK 1
@@ -282,6 +331,26 @@ java.lang.Exception: A resource exists with a different case: '/OOP/src/resource
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+=======
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2020-12-01 18:00:55.908
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7165)
+	at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3447)
+	at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3420)
+	at org.eclipse.egit.ui.UIUtils.saveAllEditors(UIUtils.java:886)
+	at org.eclipse.egit.ui.internal.staging.StagingView.internalCommit(StagingView.java:4355)
+	at org.eclipse.egit.ui.internal.staging.StagingView.commit(StagingView.java:4314)
+	at org.eclipse.egit.ui.internal.staging.StagingView.access$29(StagingView.java:4309)
+	at org.eclipse.egit.ui.internal.staging.StagingView$21.widgetSelected(StagingView.java:1149)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
@@ -304,6 +373,7 @@ java.lang.Exception: A resource exists with a different case: '/OOP/src/resource
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2020-12-03 00:50:23.040
 !MESSAGE Internal Error
 !STACK 1
@@ -340,6 +410,26 @@ org.eclipse.core.internal.resources.ResourceException(/OOP/src/resource/characte
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+=======
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2020-12-01 18:01:24.330
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7165)
+	at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3447)
+	at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3420)
+	at org.eclipse.egit.ui.UIUtils.saveAllEditors(UIUtils.java:886)
+	at org.eclipse.egit.ui.internal.staging.StagingView.internalCommit(StagingView.java:4355)
+	at org.eclipse.egit.ui.internal.staging.StagingView.commit(StagingView.java:4314)
+	at org.eclipse.egit.ui.internal.staging.StagingView.access$29(StagingView.java:4309)
+	at org.eclipse.egit.ui.internal.staging.StagingView$21.widgetSelected(StagingView.java:1149)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
@@ -361,6 +451,7 @@ org.eclipse.core.internal.resources.ResourceException(/OOP/src/resource/characte
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 275 2020-12-03 00:50:23.041
 !MESSAGE A resource exists with a different case: '/OOP/src/resource/characters/A.png'.
 !STACK 0
@@ -397,6 +488,28 @@ java.lang.Exception: A resource exists with a different case: '/OOP/src/resource
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3987)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3615)
+=======
+
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2020-12-01 18:01:43.552
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7165)
+	at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3447)
+	at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3420)
+	at org.eclipse.ui.ide.IDE$1.run(IDE.java:1494)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1482)
+	at org.eclipse.ui.actions.CloseResourceAction.run(CloseResourceAction.java:190)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:171)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+>>>>>>> 926c9e0951686420ebaff2c293cb421fb3e578d5
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
